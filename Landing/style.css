@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;500&family=Bellefair&display=swap');
+
+
+:root {
+    --Barlow: 'Barlow Condensed', sans-serif;
+    --Bellefair: 'Bellefair', serif;
+}
+
+body {
+    background-image: url(/Landing/assets/home/background-home-desktop.jpg);
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    /* background-color: #fff; */
+    backdrop-filter: blur(16px);
+}
