@@ -52,7 +52,6 @@ body {
     justify-content: space-between;
     padding: 1.5rem 6rem;
     background-color: transparent;
-    /* backdrop-filter: blur(10px); */
     font-family: var(--Barlow);
     text-transform: uppercase;
 }
@@ -74,13 +73,23 @@ body {
     padding-left: 2rem;
     text-decoration: none;
     color: #fff;
-    /* position: relative; */
 }
 
 .right-nav-items a:hover {
     border-bottom: 5px solid #fff;
     padding-bottom: 1rem;
-    /* margin-top: 2rem; */
+}
+
+/* .mobile-active {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #fff;
+    width: 60%;
+    height: 100%;
+} */
+
+.mobile-nav {
+    display: none;
 }
 
 /* Destination */
@@ -203,4 +212,18 @@ body {
     font-size: 2rem;
     font-weight: 300;
     text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+    .mobile-nav{
+        display: block;
+    }
+
+    .nav-line {
+        display: none;
+    }
+
+    .right-nav {
+        display: none;
+    }
 }
